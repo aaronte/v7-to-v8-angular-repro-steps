@@ -17,17 +17,17 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/repro-repo",
-            "index": "src/index.html",
-            "main": "src/main.ts",
-            "polyfills": "src/polyfills.ts",
-            "tsConfig": "src/tsconfig.app.json",
+            "outputPath": "./projects/main-project/dist",
+            "index": "./projects/main-project/src/index.html",
+            "main": "./projects/main-project/src/main.ts",
+            "polyfills": "./projects/main-project/src/polyfills.ts",
+            "tsConfig": "./projects/main-project/src/tsconfig.app.json",
             "assets": [
               "src/favicon.ico",
               "src/assets"
             ],
             "styles": [
-              "src/styles.scss"
+              "./projects/main-project/src/styles.scss"
             ],
             "scripts": []
           },
@@ -35,8 +35,8 @@
             "production": {
               "fileReplacements": [
                 {
-                  "replace": "src/environments/environment.ts",
-                  "with": "src/environments/environment.prod.ts"
+                  "replace": "./projects/main-project/src/environments/environment.ts",
+                  "with": "./projects/main-project/src/environments/environment.prod.ts"
                 }
               ],
               "optimization": true,
